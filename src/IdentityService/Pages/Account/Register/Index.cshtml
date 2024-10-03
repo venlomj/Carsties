@@ -5,6 +5,7 @@
 <div>
     <partial name="_ValidationSummary" />
 
+    <div class="row">
     <div class="col-6 offset-3">
         <div class="card">
             <div class="card-header">
@@ -44,12 +45,13 @@
                         </form>
             </div>
             
-            @if (Model.RegisterSuccess)
+            @if(Model.RegisterSuccess)
             {
-                <div class="alert alert-success">
+                <div class="alert alert-success mt-2">
                     <strong>successfully registered</strong> - You can now login
                 </div>
             }
         </div>   
     </div>
+</div>
 </div>
